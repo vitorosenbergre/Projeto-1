@@ -1,123 +1,136 @@
+/* Define o estilo global do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    display: flex; /* Flexbox para centralizar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura da tela */
+    margin: 0; /* Remove margens padrão */
+    background-color: #f0f0f0; /* Cor de fundo */
 }
 
+/* Estilo para o contêiner principal */
 .container {
     display: flex;
     width: 100%;
     max-width: 800px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 20px; /* Bordas arredondadas */
     overflow: hidden;
-    height: 600px;
+    height: 600px; /* Altura fixa */
 }
 
+/* Estilo para a seção da imagem */
 .imagem-container {
-    flex: 1;
-    background-color: #DC44C3;
+    flex: 1; /* Ocupa metade do espaço disponível */
+    background-color: #DC44C3; /* Cor de fundo */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #ccc; /* Borda direita */
 }
 
+/* Estilo para a imagem dentro do contêiner de imagem */
 .imagem-container img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    max-width: 100%; /* Largura máxima */
+    max-height: 100%; /* Altura máxima */
+    object-fit: cover; /* Ajusta a imagem dentro do contêiner */
 }
 
+/* Estilo para o contêiner do formulário */
 .form-container {
-    flex: 1;
+    flex: 1; /* Ocupa metade do espaço disponível */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     background-color: #fff;
     overflow: hidden;
 }
 
+/* Estilo para os títulos */
 h1, h2 {
     text-align: center;
     margin: 10px 0;
 }
 
 h1 {
-    color: #DC44C3;
+    color: #DC44C3; /* Cor do título principal */
 }
 
 h2 {
-    color: #333;
+    color: #333; /* Cor do subtítulo */
 }
 
+/* Estilo para o contêiner dos botões de alternância */
 .button-wrapper {
     position: relative;
     width: 100%;
     margin: 20px 0 40px;
-    background-color: #EAEAEA;
-    border-radius: 25px;
+    background-color: #EAEAEA; /* Fundo cinza claro */
+    border-radius: 25px; /* Bordas arredondadas */
     overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
 
+/* Estilo para os botões de alternância */
 .button-wrapper button {
-    flex: 1;
+    flex: 1; /* Cada botão ocupa 50% do espaço */
     padding: 10px 0;
     background-color: transparent;
-    color: #333;
+    color: #333; /* Cor do texto */
     border: none;
     cursor: pointer;
     font-size: 1em;
     z-index: 1;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
 }
 
+/* Estilo para o fundo animado dos botões */
 .button-wrapper .btn-bg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%; 
+    width: 50%; /* Metade da largura do contêiner */
     height: 100%;
-    background-color: #DC44C3;
-    transition: left 0.3s ease;
+    background-color: #DC44C3; /* Cor do fundo */
+    transition: left 0.3s ease; /* Transição suave ao mover */
     z-index: 0;
 }
 
+/* Estilo para o botão ativo */
 button.active {
-    color: #fff;
+    color: #fff; /* Cor branca para o botão ativo */
 }
 
+/* Estilo para os formulários */
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
+/* Estilo para os campos de entrada */
 input {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
     font-size: 1em;
 }
 
+/* Estilo específico para campos de texto, e-mail e senha */
 input[type="text"], 
 input[type="email"], 
 input[type="password"] {
     padding: 10px 20px;
-    background-color: #EAEAEA;
+    background-color: #EAEAEA; /* Fundo cinza claro */
     color: #333;
     border: none;
-    border-radius: 25px;
+    border-radius: 25px; /* Bordas arredondadas */
     font-size: 1em;
     width: 100%;
     box-sizing: border-box;
@@ -126,80 +139,92 @@ input[type="password"] {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Estilo ao focar nos campos de entrada */
 input[type="text"]:focus, 
 input[type="email"]:focus, 
 input[type="password"]:focus {
-    background-color: #D4D4D4;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #D4D4D4; /* Muda a cor de fundo ao focar */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao focar */
 }
 
+/* Estilo para campos de entrada inválidos */
 input.invalid {
-    background-color: #FFD2D2;
-    border-color: #FF0000;
+    background-color: #FFD2D2; /* Fundo vermelho claro */
+    border-color: #FF0000; /* Borda vermelha */
 }
 
+/* Estilo para campos de entrada válidos */
 input.valid {
-    background-color: #D2FFD2;
-    border-color: #00FF00;
+    background-color: #D2FFD2; /* Fundo verde claro */
+    border-color: #00FF00; /* Borda verde */
 }
 
+/* Estilo para o botão de envio */
 button[type="submit"] {
     padding: 15px;
-    background-color: #DC44C3;
-    color: #fff;
+    background-color: #DC44C3; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
     border: none;
-    border-radius: 25px;
+    border-radius: 25px; /* Bordas arredondadas */
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Estilo ao passar o mouse sobre o botão de envio */
 button[type="submit"]:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
 }
 
+/* Estilo ao clicar no botão de envio */
 button[type="submit"]:active {
-    transform: scale(0.95);
+    transform: scale(0.95); /* Diminui ligeiramente o tamanho */
 }
 
+/* Esconde o conteúdo do formulário por padrão */
 .form-content {
-    display: none; 
+    display: none;
     width: 100%;
     padding: 0 40px;
     box-sizing: border-box;
 }
 
+/* Exibe o conteúdo do formulário ativo */
 .form-content.active {
-    display: flex; 
+    display: flex;
 }
 
+/* Estilo para as mensagens de erro */
 .error-message {
-    color: #FF0000;
+    color: #FF0000; /* Cor vermelha */
     font-size: 0.875em;
     margin-top: -15px;
     margin-bottom: 10px;
     display: block;
 }
 
+/* Estilo para o feedback de submissão */
 .submission-feedback {
     position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Cor de fundo verde */
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 5px; /* Bordas arredondadas */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    z-index: 1000;
+    z-index: 1000; /* Sobrepõe outros elementos */
 }
 
+/* Animação para desvanecer o feedback de submissão */
 .submission-feedback.fade-out {
     opacity: 0;
 }
 
+/* Estilo para o link de recuperação de senha */
 .recuperar-senha {
     display: block;
     margin-top: -5px;
@@ -211,11 +236,13 @@ button[type="submit"]:active {
     transition: color 0.3s ease;
 }
 
+/* Estilo ao passar o mouse sobre o link de recuperação de senha */
 .recuperar-senha:hover {
     color: #A02890;
     text-decoration: underline;
 }
 
+/* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;

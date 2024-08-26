@@ -4,30 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar Senha</title>
+    <!-- Link para o arquivo CSS que estiliza a página -->
     <link rel="stylesheet" href="css/estiloSenha.css">
 </head>
 <body>
     <div class="container">
+        <!-- Seção de imagem à esquerda -->
         <div class="imagem-container">
+            <!-- Imagem carregada de um link externo -->
             <img src="https://drive.google.com/thumbnail?id=1OYN2g2oR8TUZ1J-RnmnLCk7O-EVU7QJW&sz=w1000" alt="Imagem">
         </div>
+        
+        <!-- Seção do formulário à direita -->
         <div class="form-container">
+            <!-- Título principal do site -->
             <h1>Restic36</h1>
+            <!-- Subtítulo -->
             <h2>Recuperar Senha</h2>
+
+            <!-- Formulário de recuperação de senha -->
             <div id="form-recover" class="form-content active">
                 <form id="recover-form">
+                    <!-- Campo para o e-mail de recuperação -->
                     <input type="email" placeholder="Digite seu e-mail" required>
+                    <!-- Botão de envio do formulário de recuperação -->
                     <button type="submit">Recuperar Senha</button>
                 </form>
+                <!-- Mensagem de confirmação, inicialmente oculta -->
                 <div id="confirmation-message" style="display:none;">
                     <p class="success-message">Nova senha enviada ao email cadastrado!</p>
                 </div>
+                <!-- Botão para voltar à página de login -->
                 <div class="btn-container">
                     <a href="index.html" class="btn-back">Voltar ao Login</a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Link para o arquivo JavaScript que controla a lógica da página -->
     <script src="js/recuperarsenha.js"></script>
 </body>
 </html>

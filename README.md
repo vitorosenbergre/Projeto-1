@@ -15,4 +15,3 @@ Esta é uma aplicação web básica que permite aos usuários fazer login e regi
 ## Possíveis Melhorias Futuras
 - Integração com um backend real para armazenar os dados de login e registro.
 - Implementação de autenticação JWT.
-- Melhoria na validação do formulário, com mensagens de erro mais detalhadas.

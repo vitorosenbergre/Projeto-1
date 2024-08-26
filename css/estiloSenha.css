@@ -1,3 +1,4 @@
+/* Estilo global do corpo da página */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -8,6 +9,7 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Estilo para o contêiner principal */
 .container {
     display: flex;
     width: 100%;
@@ -19,6 +21,7 @@ body {
     height: 600px;
 }
 
+/* Estilo para o contêiner de imagem */
 .imagem-container {
     flex: 1;
     background-color: #DC44C3;
@@ -28,12 +31,14 @@ body {
     border-right: 1px solid #ccc;
 }
 
+/* Estilo para a imagem */
 .imagem-container img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
+/* Estilo para o contêiner do formulário */
 .form-container {
     flex: 1;
     display: flex;
@@ -45,6 +50,7 @@ body {
     overflow: hidden;
 }
 
+/* Estilo para os títulos */
 h1, h2 {
     text-align: center;
     margin: 10px 0;
@@ -58,6 +64,7 @@ h2 {
     color: #333;
 }
 
+/* Estilo para o formulário */
 form {
     display: flex;
     flex-direction: column;
@@ -65,6 +72,7 @@ form {
     width: 100%;
 }
 
+/* Estilo para os campos de entrada */
 input {
     margin-bottom: 20px;
     padding: 15px;
@@ -73,6 +81,7 @@ input {
     font-size: 1em;
 }
 
+/* Estilo específico para campos de e-mail */
 input[type="email"] {
     padding: 10px 20px;
     background-color: #EAEAEA;
@@ -81,8 +90,8 @@ input[type="email"] {
     border-radius: 25px;
     font-size: 1em;
     width: 100%;
-    width: 300px;
-    height: 50px;
+    width: 300px; /* Largura fixa */
+    height: 50px; /* Altura fixa */
     box-sizing: border-box;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -90,11 +99,13 @@ input[type="email"] {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Estilo ao focar no campo de e-mail */
 input[type="email"]:focus {
     background-color: #D4D4D4;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo para o botão de envio */
 button[type="submit"] {
     padding: 10px 20px;
     background-color: #DC44C3;
@@ -104,14 +115,17 @@ button[type="submit"] {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 200px; /* Largura fixa menor para o botão */
-    height: 40px; /* Altura fixa menor para o botão */
-    text-align: center; /* Garante que o texto esteja centralizado */
+    width: 200px; /* Largura fixa menor */
+    height: 40px; /* Altura fixa menor */
+    text-align: center;
 }
+
+/* Estilo ao passar o mouse sobre o botão de envio */
 button[type="submit"]:hover {
     transform: scale(1.05);
 }
 
+/* Estilo ao clicar no botão de envio */
 button[type="submit"]:active {
     transform: scale(0.95);
 }
@@ -123,6 +137,7 @@ button[type="submit"]:active {
     justify-content: center; /* Centraliza o botão horizontalmente */
 }
 
+/* Estilo para o botão de voltar */
 .btn-back {
     padding: 10px 20px;
     background-color: #DC44C3;
@@ -133,14 +148,17 @@ button[type="submit"]:active {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Estilo ao passar o mouse sobre o botão de voltar */
 .btn-back:hover {
     transform: scale(1.05);
 }
 
+/* Estilo ao clicar no botão de voltar */
 .btn-back:active {
     transform: scale(0.95);
 }
 
+/* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;

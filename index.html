@@ -4,39 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários de Login e Cadastro</title>
+    <!-- Link para o arquivo CSS que estiliza a página -->
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <div class="container">
+        <!-- Seção de imagem à esquerda -->
         <div class="imagem-container">
+            <!-- Imagem carregada de um link externo hospedado no google drive-->
             <img src="https://drive.google.com/thumbnail?id=1OYN2g2oR8TUZ1J-RnmnLCk7O-EVU7QJW&sz=w1000" alt="Imagem">
         </div>
+        
+        <!-- Seção do formulário à direita -->
         <div class="form-container">
+            <!-- Título principal do site -->
             <h1>Restic36</h1>
+            <!-- Subtítulo -->
             <h2>Trilha 2 - Fullstack</h2>
+
+            <!-- Wrapper para os botões de alternância entre login e cadastro -->
             <div class="button-wrapper">
+                <!-- Botão de login, ativo por padrão -->
                 <button id="btn-login" class="active">Entrar</button>
+                <!-- Botão de cadastro -->
                 <button id="btn-register">Inscrição</button>
+                <!-- Elemento visual que se move para indicar o botão ativo -->
                 <div class="btn-bg"></div>
             </div>
+
+            <!-- Formulário de login, visível por padrão -->
             <div id="form-login" class="form-content active">
                 <form id="login-form">
+                    <!-- Campo de e-mail -->
                     <input type="email" placeholder="exemplo@gmail.com" required>
+                    <!-- Campo de senha -->
                     <input type="password" placeholder="Senha" required>
+                    <!-- Link para a página de recuperação de senha -->
                     <a href="recuperarsenha.html" class="recuperar-senha">Esqueceu sua senha?</a>
+                    <!-- Botão de envio do formulário de login -->
                     <button type="submit">Enviar</button>
                 </form>
             </div>
+
+            <!-- Formulário de cadastro, oculto por padrão -->
             <div id="form-register" class="form-content">
                 <form id="register-form">
+                    <!-- Campo para nome de usuário -->
                     <input type="text" placeholder="Nome de Usuário" required>
+                    <!-- Campo para e-mail -->
                     <input type="email" placeholder="exemplo@gmail.com" required>
+                    <!-- Campo para senha -->
                     <input type="password" placeholder="Senha" required>
+                    <!-- Botão de envio do formulário de cadastro -->
                     <button type="submit">Enviar</button>
                 </form>
             </div>
         </div>
     </div>
+    <!-- Link para o arquivo JavaScript que controla a lógica da página -->
     <script src="js/main.js"></script>
 </body>
 </html>
