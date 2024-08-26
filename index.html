@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários de Login e Cadastro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="imagem-container">
+            <img src="https://drive.google.com/thumbnail?id=1OYN2g2oR8TUZ1J-RnmnLCk7O-EVU7QJW&sz=w1000" alt="Imagem">
+        </div>
+        <div class="form-container">
+            <h1>Restic36</h1>
+            <h2>Trilha 2 - Fullstack</h2>
+            <div class="button-wrapper">
+                <button id="btn-login" class="active">Entrar</button>
+                <button id="btn-register">Inscrição</button>
+                <div class="btn-bg"></div>
+            </div>
+            <div id="form-login" class="form-content active">
+                <form id="login-form">
+                    <input type="email" placeholder="exemplo@gmail.com" required>
+                    <input type="password" placeholder="Senha" required>
+                    <a href="recuperarsenha.html" class="recuperar-senha">Esqueceu sua senha?</a>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div id="form-register" class="form-content">
+                <form id="register-form">
+                    <input type="text" placeholder="Nome de Usuário" required>
+                    <input type="email" placeholder="exemplo@gmail.com" required>
+                    <input type="password" placeholder="Senha" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
